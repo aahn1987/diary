@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear Diary ♡ Home</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="happy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10" r=".9" fill="currentColor" stroke="none"/><path d="M8 14.5q4 4 8 0"/></symbol>
+    <symbol id="calm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7.5 10.5q1.2-1.2 2.4 0M14.1 10.5q1.2-1.2 2.4 0"/><path d="M9 15q3 2 6 0"/></symbol>
+    <symbol id="grateful" viewBox="0 0 24 24"><path d="M12 20.5s-8-4.8-8-10.8a4.4 4.4 0 0 1 8-2.5 4.4 4.4 0 0 1 8 2.5c0 6-8 10.8-8 10.8z"/></symbol>
+    <symbol id="anxious" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10.5" r=".9" fill="currentColor" stroke="none"/><path d="M7 8l3-1M17 8l-3-1"/><path d="M8 16q1-1.5 2 0t2 0 2 0 2 0"/></symbol>
+    <symbol id="sad" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10" r=".9" fill="currentColor" stroke="none"/><path d="M8.5 16.5q3.5-3 7 0"/></symbol>
+    <symbol id="angry" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M6.5 7.5l4 2M17.5 7.5l-4 2"/><circle cx="8.5" cy="11.5" r=".9" fill="currentColor" stroke="none"/><circle cx="15.5" cy="11.5" r=".9" fill="currentColor" stroke="none"/><path d="M8.5 16.5q3.5-2.5 7 0"/></symbol>
+    <symbol id="tired" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7 10.5h3M14 10.5h3"/><path d="M9.5 15.5h5"/></symbol>
+  </svg>
+
+  <aside class="sidebar">
+    <a class="logo" href="index.html">Dear Diary ♡</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="calendar.html">Mood Calendar</a></li>
+        <li><a href="board.html">My Board</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="sidebar-note">Good things<br>take time ♡</p>
+  </aside>
+
+  <div class="content">
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Welcome back,<br>it's a good day to write ♡</h1>
+          <p>Hi, I'm Lara. This is my little space for photos, moods,
+            random thoughts and sweet memories.</p>
+          <a class="btn" href="calendar.html">Open my mood calendar</a>
+        </div>
+      </section>
+
+      <section class="facts">
+        <div class="fact"><strong>Birthday</strong>1st of May</div>
+        <div class="fact"><strong>Lives in</strong>New York</div>
+        <div class="fact"><strong>Loves</strong>Music &amp; coffee</div>
+        <div class="fact"><strong>Dream</strong>Travel the world</div>
+      </section>
+
+      <h2 class="section-title">Recent entries</h2>
+      <section class="entries">
+        <article class="card entry">
+          <span class="entry-date">24 Oct 2026</span>
+          <h3>A cozy Saturday</h3>
+          <p>Rain outside, candles inside, and a very good book. Perfect.</p>
+          <span class="entry-mood calm"><svg class="face"><use href="#calm"/></svg> Calm</span>
+        </article>
+        <article class="card entry">
+          <span class="entry-date">20 Oct 2026</span>
+          <h3>New notebook day</h3>
+          <p>Bought pastel pens and way too many stickers. No regrets!</p>
+          <span class="entry-mood happy"><svg class="face"><use href="#happy"/></svg> Happy</span>
+        </article>
+        <article class="card entry">
+          <span class="entry-date">15 Oct 2026</span>
+          <h3>Friends &amp; sunsets</h3>
+          <p>We laughed until it got dark. Some days just feel like magic.</p>
+          <span class="entry-mood grateful"><svg class="face"><use href="#grateful"/></svg> Grateful</span>
+        </article>
+      </section>
+
+      <h2 class="section-title">Your spaces</h2>
+      <section class="spaces">
+        <a class="space" href="gallery.html"><h3>Gallery</h3><p>Photos I love</p></a>
+        <a class="space" href="calendar.html"><h3>Mood Calendar</h3><p>How I felt, day by day</p></a>
+        <a class="space" href="board.html"><h3>My Board</h3><p>Notes, quotes &amp; photos</p></a>
+        <a class="space" href="contact.html"><h3>Contact</h3><p>Say hi to me</p></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">Made with ♡ by Lara · 2026</footer>
+  </div>
+
+</body>
+</html>

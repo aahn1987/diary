@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear Diary ♡ Contact</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <a class="logo" href="index.html">Dear Diary ♡</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="calendar.html">Mood Calendar</a></li>
+        <li><a href="board.html">My Board</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="sidebar-note">Good things<br>take time ♡</p>
+  </aside>
+
+  <div class="content">
+    <main>
+      <h1 class="page-title">Contact Me</h1>
+      <p class="page-subtitle">Say hi, share an idea, or just send some love</p>
+
+      <div class="contact-layout">
+        <aside class="contact-info">
+          <div class="card"><h3>Email</h3><p>Lara@gmail.com</p></div>
+          <div class="card"><h3>Instagram</h3><p>@ilarail_</p></div>
+          <div class="card"><h3>Reply time</h3><p>Usually within 2 days ♡</p></div>
+        </aside>
+
+        <form class="card" action="mailto:hello@gmail.com" method="post" enctype="text/plain">
+          <div><label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Sara" required></div>
+          <div><label for="email">Your email</label>
+            <input type="email" id="email" name="email" placeholder="sara@gmail.com" required></div>
+          <div><label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>Just saying hi</option><option>Collaboration</option>
+              <option>Question</option><option>Other</option>
+            </select></div>
+          <div><label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something sweet..." required></textarea></div>
+          <button class="btn" type="submit">Send ♡</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">Made with ♡ by Lara · 2026</footer>
+  </div>
+
+</body>
+</html>

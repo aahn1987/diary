@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear Diary ♡ Mood Calendar</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@500&family=Lora:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="happy" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="8.5" cy="10" r=".9" fill="currentColor" stroke="none" />
+      <circle cx="15.5" cy="10" r=".9" fill="currentColor" stroke="none" />
+      <path d="M8 14.5q4 4 8 0" />
+    </symbol>
+    <symbol id="calm" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M7.5 10.5q1.2-1.2 2.4 0M14.1 10.5q1.2-1.2 2.4 0" />
+      <path d="M9 15q3 2 6 0" />
+    </symbol>
+    <symbol id="grateful" viewBox="0 0 24 24">
+      <path d="M12 20.5s-8-4.8-8-10.8a4.4 4.4 0 0 1 8-2.5 4.4 4.4 0 0 1 8 2.5c0 6-8 10.8-8 10.8z" />
+    </symbol>
+    <symbol id="anxious" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="8.5" cy="10.5" r=".9" fill="currentColor" stroke="none" />
+      <circle cx="15.5" cy="10.5" r=".9" fill="currentColor" stroke="none" />
+      <path d="M7 8l3-1M17 8l-3-1" />
+      <path d="M8 16q1-1.5 2 0t2 0 2 0 2 0" />
+    </symbol>
+    <symbol id="sad" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="8.5" cy="10" r=".9" fill="currentColor" stroke="none" />
+      <circle cx="15.5" cy="10" r=".9" fill="currentColor" stroke="none" />
+      <path d="M8.5 16.5q3.5-3 7 0" />
+    </symbol>
+    <symbol id="angry" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M6.5 7.5l4 2M17.5 7.5l-4 2" />
+      <circle cx="8.5" cy="11.5" r=".9" fill="currentColor" stroke="none" />
+      <circle cx="15.5" cy="11.5" r=".9" fill="currentColor" stroke="none" />
+      <path d="M8.5 16.5q3.5-2.5 7 0" />
+    </symbol>
+    <symbol id="tired" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M7 10.5h3M14 10.5h3" />
+      <path d="M9.5 15.5h5" />
+    </symbol>
+  </svg>
+
+  <aside class="sidebar">
+    <a class="logo" href="index.html">Dear Diary ♡</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="calendar.html" aria-current="page">Mood Calendar</a></li>
+        <li><a href="board.html">My Board</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="sidebar-note">Good things<br>take time ♡</p>
+  </aside>
+
+  <div class="content">
+    <main>
+      <h1 class="page-title">October 2026</h1>
+      <p class="page-subtitle">How I felt, day by day</p>
+
+      <div class="legend">
+        <span class="happy"><svg class="face">
+            <use href="#happy" />
+          </svg> Happy</span>
+        <span class="calm"><svg class="face">
+            <use href="#calm" />
+          </svg> Calm</span>
+        <span class="grateful"><svg class="face">
+            <use href="#grateful" />
+          </svg> Grateful</span>
+        <span class="anxious"><svg class="face">
+            <use href="#anxious" />
+          </svg> Anxious</span>
+        <span class="sad"><svg class="face">
+            <use href="#sad" />
+          </svg> Sad</span>
+        <span class="angry"><svg class="face">
+            <use href="#angry" />
+          </svg> Angry</span>
+        <span class="tired"><svg class="face">
+            <use href="#tired" />
+          </svg> Tired</span>
+      </div>
+
+      <div class="calendar-wrap">
+        <section class="calendar">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day empty"></div>
+          <div class="day happy"><span class="num">1</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Fresh start to the month</p>
+          </div>
+          <div class="day calm"><span class="num">2</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Slow morning, long walk</p>
+          </div>
+          <div class="day tired"><span class="num">3</span><span class="mood"><svg class="face">
+                <use href="#tired" />
+              </svg></span>
+            <p>Stayed in bed till noon</p>
+          </div>
+          <div class="day calm"><span class="num">4</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Tea and a good playlist</p>
+          </div>
+          <div class="day happy"><span class="num">5</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span><img src="PHOTO\Sunny balcony.jpg" alt="Day 5 photo">
+            <p>Sunny balcony</p>
+          </div>
+          <div class="day anxious"><span class="num">6</span><span class="mood"><svg class="face">
+                <use href="#anxious" />
+              </svg></span>
+            <p>Too many deadlines</p>
+          </div>
+          <div class="day anxious"><span class="num">7</span><span class="mood"><svg class="face">
+                <use href="#anxious" />
+              </svg></span>
+            <p>Couldn't focus at all</p>
+          </div>
+          <div class="day calm"><span class="num">8</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Finished my tasks early</p>
+          </div>
+          <div class="day grateful"><span class="num">9</span><span class="mood"><svg class="face">
+                <use href="#grateful" />
+              </svg></span>
+            <p>Mom called, felt loved</p>
+          </div>
+          <div class="day happy"><span class="num">10</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Coffee with a friend</p>
+          </div>
+          <div class="day tired"><span class="num">11</span><span class="mood"><svg class="face">
+                <use href="#tired" />
+              </svg></span>
+            <p>Lazy Sunday</p>
+          </div>
+          <div class="day sad"><span class="num">12</span><span class="mood"><svg class="face">
+                <use href="#sad" />
+              </svg></span><img src="PHOTO\Grey sky.jpg" alt="Day 12 photo">
+            <p>Grey sky</p>
+          </div>
+          <div class="day sad"><span class="num">13</span><span class="mood"><svg class="face">
+                <use href="#sad" />
+              </svg></span>
+            <p>Missed home today</p>
+          </div>
+          <div class="day calm"><span class="num">14</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Journaled for an hour</p>
+          </div>
+          <div class="day grateful"><span class="num">15</span><span class="mood"><svg class="face">
+                <use href="#grateful" />
+              </svg></span>
+            <p>Friends &amp; sunset</p>
+          </div>
+          <div class="day happy"><span class="num">16</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Dancing in the kitchen</p>
+          </div>
+          <div class="day happy"><span class="num">17</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Found a new song</p>
+          </div>
+          <div class="day calm"><span class="num">18</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Quiet reading day</p>
+          </div>
+          <div class="day angry"><span class="num">19</span><span class="mood"><svg class="face">
+                <use href="#angry" />
+              </svg></span><img src="PHOTO\Bad traffic.jpg" alt="Day 19 photo">
+            <p>Bad traffic</p>
+          </div>
+          <div class="day happy"><span class="num">20</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>New notebook &amp; stickers!</p>
+          </div>
+          <div class="day tired"><span class="num">21</span><span class="mood"><svg class="face">
+                <use href="#tired" />
+              </svg></span>
+            <p>Slept badly</p>
+          </div>
+          <div class="day anxious"><span class="num">22</span><span class="mood"><svg class="face">
+                <use href="#anxious" />
+              </svg></span>
+            <p>Big exam tomorrow</p>
+          </div>
+          <div class="day grateful"><span class="num">23</span><span class="mood"><svg class="face">
+                <use href="#grateful" />
+              </svg></span>
+            <p>It went better than I hoped</p>
+          </div>
+          <div class="day calm"><span class="num">24</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span><img src="PHOTO\Rain & candles.jpg" alt="Day 24 photo">
+            <p>Rain &amp; candles</p>
+          </div>
+          <div class="day happy"><span class="num">25</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Baked with friends</p>
+          </div>
+          <div class="day calm"><span class="num">26</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Rainy window day</p>
+          </div>
+          <div class="day grateful"><span class="num">27</span><span class="mood"><svg class="face">
+                <use href="#grateful" />
+              </svg></span>
+            <p>Small joys add up</p>
+          </div>
+          <div class="day tired"><span class="num">28</span><span class="mood"><svg class="face">
+                <use href="#tired" />
+              </svg></span>
+            <p>Long day, early night</p>
+          </div>
+          <div class="day happy"><span class="num">29</span><span class="mood"><svg class="face">
+                <use href="#happy" />
+              </svg></span>
+            <p>Golden hour walk</p>
+          </div>
+          <div class="day calm today"><span class="num">30</span><span class="mood"><svg class="face">
+                <use href="#calm" />
+              </svg></span>
+            <p>Redesigning my diary ♡</p>
+          </div>
+          <div class="day future"><span class="num">31</span></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">Made with ♡ by Lara · 2026</footer>
+  </div>
+
+</body>
+
+</html>
